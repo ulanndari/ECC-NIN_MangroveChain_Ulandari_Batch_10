@@ -11,6 +11,7 @@ Untuk menjawab tantangan tersebut, MangroveChain dikembangkan sebagai sebuah sis
 MangroveChain tidak hanya menampilkan visualisasi data konservasi, tetapi juga mendukung pengambilan keputusan berbasis bukti melalui integrasi model statistik dan pembelajaran mesin, seperti ARIMA untuk peramalan partisipasi komunitas dan XGBoost untuk mengklasifikasikan daya tarik proyek dalam kerangka keuangan hijau. Di samping itu, platform ini menyediakan indikator yang komprehensif seperti jumlah spesies (species count), kepadatan pohon (tree density), kualitas air, dan keterlibatan masyarakat, yang diolah dari dataset terstandarisasi. Setiap proyek dianalisis dari sisi kelengkapan izin, kejelasan batas lahan, serta performa dalam menurunkan emisi karbon yang dikonversi ke dalam kredit karbon, sehingga memungkinkan skema perdagangan karbon yang terverifikasi secara digital.
 
 Melalui pendekatan ini, MangroveChain bertujuan menjadi katalis transformasi dalam tata kelola konservasi mangrove yang lebih terbuka, kolaboratif, dan terdesentralisasi. Sistem ini juga diharapkan dapat memperkuat kepercayaan donor, lembaga internasional, dan pemerintah daerah terhadap efektivitas proyek yang mereka danai, sekaligus membuka akses pembiayaan inovatif melalui skema carbon offset, green bonds, dan tokenisasi aset karbon di masa depan. Dengan menjembatani teknologi dan ekologi, MangroveChain mendorong Indonesia menuju masa depan konservasi yang lebih adil, berbasis data, dan berkelanjutan.
+
 ---------------------------------------------------------------------------
 ## 1.2 Identifikasi Masalah
 1. Terdapat inkonsistensi hasil konservasi biodiversitas antar proyek mangrove di Indonesia, yang diduga berkaitan dengan perbedaan status regulasi, kepemilikan lahan, dan kejelasan batas hukum wilayah konservasi.
@@ -33,6 +34,7 @@ Melalui pendekatan ini, MangroveChain bertujuan menjadi katalis transformasi dal
 4. Bagaimana membangun sistem klasifikasi risiko hukum berbasis data multidimensi untuk mengidentifikasi proyek konservasi mangrove yang rentan terhadap konflik hukum secara lebih proaktif dan terukur?
 
 5. Bagaimana menganalisis pola jaringan data blockchain dan hubungan antar stakeholder untuk merancang sistem berbagi informasi yang efisien, adil, dan mendorong peningkatan transaksi karbon melalui desain smart contract yang tepat?
+   
 ----------------------------------------------------------------------------
 ## 1.4 Tujuan
 1. Menganalisis hubungan antara efektivitas regulasi dan kepemilikan lahan terhadap dampak biodiversitas proyek konservasi.
@@ -40,6 +42,7 @@ Melalui pendekatan ini, MangroveChain bertujuan menjadi katalis transformasi dal
 3. Memprediksi keberlanjutan proyek berdasarkan pola keterlibatan masyarakat di tahap awal pelaksanaan.
 4. Mengidentifikasi dan memetakan proyek berisiko hukum tinggi melalui analisis multi-dimensi dan spasial.
 5. Memahami pola aliran dan distribusi data blockchain untuk mengoptimalkan arsitektur sistem konservasi.
+   
 --------------------------------------------------------------------------
 ## 1.5 Manfaat
 1.Bagi Eco-Techno Leaders
@@ -68,6 +71,7 @@ Data untuk analisis ini bersumber dari database PostgreSQL yang mengintegrasikan
 
 Query berikut digunakan untuk menggabungkan data dari tabel regulatory_permits, land_tenure_records, dan biodiversity_monitoring. Hasil dari query ini diekspor menjadi file conservation_db.csv yang kemudian digunakan oleh skrip Python untuk analisis korelasi. Query ini juga melakukan transformasi pada kolom kualitas_air dari teks menjadi nilai numerik untuk analisis statistik.
 
+'''
 sql
 -- Query ini mengambil data mentah yang telah digabungkan untuk analisis di Python
 SELECT
@@ -85,12 +89,13 @@ SELECT
 FROM regulatory_permits rp
 JOIN land_tenure_records ltr ON rp.conservation_id = ltr.conservation_id
 JOIN biodiversity_monitoring bm ON rp.conservation_id = bm.conservation_id;
-
+'''
 
 *b. SQL Query untuk Wawasan Awal (Agregasi)*
 
 Sebelum melakukan analisis korelasi mendalam, query agregasi sederhana dapat memberikan wawasan tingkat tinggi secara langsung dari database untuk menguji hipotesis awal.
 
+'''
 sql
 -- Query ini memberikan ringkasan dampak berdasarkan status izin
 SELECT 
@@ -108,9 +113,7 @@ JOIN land_tenure_records ltr ON rp.conservation_id = ltr.conservation_id
 JOIN biodiversity_monitoring bm ON rp.conservation_id = bm.conservation_id
 GROUP BY rp.permit_status
 ORDER BY Rataan_Kerapatan_Pohon DESC;
-
-
-
+'''
 
 *Hasil Query Agregasi (Contoh):*
 
