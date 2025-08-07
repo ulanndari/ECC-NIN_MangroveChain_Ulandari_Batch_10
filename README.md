@@ -130,7 +130,7 @@ a. Visualisasi Matriks Korelasi (Fokus & Penuh)
 
 *   *Heatmap : Menunjukkan hubungan langsung antara faktor regulasi dan metrik biodiversitas dan Memberikan konteks lengkap dengan menunjukkan semua hubungan antar variabel.
 
-()
+![img](https://github.com/ulanndari/ECC-NIN_MangroveChain_Ulandari_Batch_10/blob/main/kasus_1/filtered_mangrove_correlation_heatmap.png)
 
 *b. Kode Analisis Python (studikasus1fix.ipynb)*
 
