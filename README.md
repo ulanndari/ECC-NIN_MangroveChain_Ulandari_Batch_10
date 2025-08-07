@@ -71,7 +71,7 @@ Data untuk analisis ini bersumber dari database PostgreSQL yang mengintegrasikan
 
 Query berikut digunakan untuk menggabungkan data dari tabel regulatory_permits, land_tenure_records, dan biodiversity_monitoring. Hasil dari query ini diekspor menjadi file conservation_db.csv yang kemudian digunakan oleh skrip Python untuk analisis korelasi. Query ini juga melakukan transformasi pada kolom kualitas_air dari teks menjadi nilai numerik untuk analisis statistik.
 
-'''
+```
 sql
 -- Query ini mengambil data mentah yang telah digabungkan untuk analisis di Python
 SELECT
@@ -89,13 +89,13 @@ SELECT
 FROM regulatory_permits rp
 JOIN land_tenure_records ltr ON rp.conservation_id = ltr.conservation_id
 JOIN biodiversity_monitoring bm ON rp.conservation_id = bm.conservation_id;
-'''
+``` 
 
 *b. SQL Query untuk Wawasan Awal (Agregasi)*
 
 Sebelum melakukan analisis korelasi mendalam, query agregasi sederhana dapat memberikan wawasan tingkat tinggi secara langsung dari database untuk menguji hipotesis awal.
 
-'''
+```
 sql
 -- Query ini memberikan ringkasan dampak berdasarkan status izin
 SELECT 
@@ -113,7 +113,7 @@ JOIN land_tenure_records ltr ON rp.conservation_id = ltr.conservation_id
 JOIN biodiversity_monitoring bm ON rp.conservation_id = bm.conservation_id
 GROUP BY rp.permit_status
 ORDER BY Rataan_Kerapatan_Pohon DESC;
-'''
+```
 
 *Hasil Query Agregasi (Contoh):*
 
