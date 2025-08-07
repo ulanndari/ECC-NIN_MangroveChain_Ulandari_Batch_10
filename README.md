@@ -45,15 +45,15 @@ Melalui pendekatan ini, MangroveChain bertujuan menjadi katalis transformasi dal
    
 --------------------------------------------------------------------------
 ## 1.5 Manfaat
-#### **1.Bagi Eco-Techno Leaders**
+## **1.Bagi Eco-Techno Leaders**
 - Akses ke sistem monitoring real-time berbasis blockchain.
 - Pemahaman teknis tentang desain data dan smart contract dalam proyek konservasi.
 - Model prediksi berbasis keterlibatan sosial dan data ekologis.
-#### **2.Bagi Pemerintah**
+## **2.Bagi Pemerintah**
 - Penguatan sistem evaluasi berbasis data untuk kebijakan lingkungan.
 - Dukungan teknis untuk pencapaian target NDC dan program karbon nasional.
 - Sistem klasifikasi risiko proyek untuk intervensi kebijakan yang tepat sasaran.
-#### **3.Bagi Investor Hijau**
+## **3.Bagi Investor Hijau**
 - Verifikasi digital atas dampak karbon dan transparansi dana.
 - Identifikasi proyek dengan performa tertinggi dan risiko terendah.
 - Jaminan keamanan data dan partisipasi komunitas lokal yang terdokumentasi.
