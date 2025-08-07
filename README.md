@@ -126,16 +126,15 @@ Hasil agregasi ini memberikan indikasi awal bahwa proyek dengan status izin *'Ap
 
 Data yang diekspor dari SQL (conservation_db.csv) selanjutnya dianalisis menggunakan Python untuk memvisualisasikan korelasi secara lebih detail.
 
-*a. Visualisasi Matriks Korelasi (Fokus & Penuh)*
+a. Visualisasi Matriks Korelasi (Fokus & Penuh)
 
-*   *Heatmap Fokus:* Menunjukkan hubungan langsung antara faktor regulasi dan metrik biodiversitas.
-*   *Heatmap Penuh:* Memberikan konteks lengkap dengan menunjukkan semua hubungan antar variabel.
+*   *Heatmap : Menunjukkan hubungan langsung antara faktor regulasi dan metrik biodiversitas dan Memberikan konteks lengkap dengan menunjukkan semua hubungan antar variabel.
 
-(Letakkan kedua gambar heatmap di sini, seperti pada respons sebelumnya)
+()
 
 *b. Kode Analisis Python (studikasus1fix.ipynb)*
 
-(Letakkan blok kode Python di sini, seperti pada respons sebelumnya)
+()
 
 #### *3. Kesimpulan Akhir Analisis*
 
