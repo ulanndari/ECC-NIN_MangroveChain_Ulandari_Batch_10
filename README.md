@@ -134,7 +134,7 @@ a. Visualisasi Matriks Korelasi (Fokus & Penuh)
 
 *b. Kode Analisis Python (studikasus1fix.ipynb)*
 
-()
+[Klik disini](https://github.com/ulanndari/ECC-NIN_MangroveChain_Ulandari_Batch_10/blob/main/kasus_1/studikasus1fix.ipynb)
 
 #### *3. Kesimpulan Akhir Analisis*
 
